@@ -1,0 +1,23 @@
+header{
+    height: 60px;
+    background-color: #E3AC50;
+    
+}
+header a{
+    color: black;   
+}
+section img{
+    width: 200px;
+}
+
+div.color{
+    background-color: #F6E8CE;
+}
+.color_purple{
+    background-color: #7A2CDC;
+    height: 400px;
+    color: white;
+}
+.color_purple a {
+    color: white;
+}
