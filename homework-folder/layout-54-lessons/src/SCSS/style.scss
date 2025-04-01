@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #181E34;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+
+}
+
+header {
+    .header_container {
+        margin: 0 auto;
+        padding-top: 30px;
+        padding-bottom: 34px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 900px;
+
+        img {
+            width: 48px;
+            height: 48px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 437px;
+
+
+            ul {
+                display: flex;
+                list-style: none;
+
+                li {
+                    margin-right: 30px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 200;
+                        color: white;
+                    }
+                }
+
+            }
+
+
+            button {
+                box-sizing: border-box;
+                width: 113px;
+                flex-shrink: 0;
+                height: 48px;
+                background-color: white;
+                color: #2766AE;
+                border-radius: 25px;
+                border: none;
+                margin-left: 34px;
+                font-family: 'Montserrat';
+                font-weight: 500;
+                font-size: 16px;
+
+            }
+
+        }
+    }
+
+}
+
+main {
+    section.background {
+        background-image: url(../img/Rectangle2.png);
+        background-position: center;
+        background-size: cover;
+        box-sizing: border-box;
+        width: 100%;
+        height: 508px;
+        background-repeat: no-repeat;
+
+        padding-top: 120px;
+
+        h1 {
+
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        div.container {
+            margin: 60px auto 0;
+            display: flex;
+
+            width: 900px;
+
+
+            div.contain_text {
+                width: 436px;
+
+                p {
+                    margin-bottom: 15px;
+                    line-height: 150%;
+
+                    span {
+                        font-weight: bold;
+                        color: #01A2CB;
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+            div.contain_button {
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                justify-content: center;
+                width: 464px;
+
+                button {
+                    width: 320px;
+                    height: 56px;
+                    border-radius: 30px;
+                    border: none;
+                    margin-bottom: 10px;
+                    color: white;
+                    font-family: Montserrat;
+                    font-size: 16px;
+                    font-weight: 400;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    /* Выравнивание по вертикали */
+
+                    &.top {
+                        background: linear-gradient(#00A4CC, #2766AE);
+                    }
+
+                    &.bottom {
+                        background: linear-gradient(to right, #00A4CC, #2766AE);
+
+
+                    }
+                }
+            }
+        }
+    }
+
+    section.secondSection {
+        box-sizing: border-box;
+        height: 808px;
+        padding-top: 120px;
+
+        div.sectionInfo {
+            margin: 0 auto 60px;
+            max-width: 513px;
+
+            h2 {
+                font-size: 40px;
+                font-weight: 600;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            p {
+                text-align: center;
+                line-height: 150%;
+            }
+        }
+
+        div.coverCardSection {
+            width: 900px;
+            height: 310px;
+            margin: 0 auto 30px;
+            display: flex;
+            justify-content: space-between;
+            align-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            section.card {
+                box-sizing: border-box;
+                width: 204px;
+                height: 141px;
+                padding: 28px;
+                background-color: #197CB8;
+                border-radius: 16px;
+
+                h2 {
+                    font-size: 22px;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    text-align: center;
+                    line-height: 150%;
+                }
+            }
+        }
+
+        button {
+            width: 436px;
+            height: 56px;
+            margin: 0 auto 120px;
+            border-radius: 30px;
+            border: none;
+            color: white;
+            background: linear-gradient(#00A4CC, #2766AE);
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+}
+
+footer {
+    border-top: 1px solid #323952;
+    box-sizing: border-box;
+
+    div.coverFooter {
+        width: 900px;
+        margin: 0 auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        display: flex;
+
+        div.coverFirst{
+            width: 464px;
+            img{
+                width: 48px;
+                margin-bottom: 15px;
+            }
+            p{
+                line-height: 150%;
+                max-width: 267px;
+            }
+        }
+        div.coverSecond{
+            width: 347px;
+            display: flex;
+            justify-content: space-between;
+
+            div.footerNav{
+                h3{
+                    font-size: 22;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                ul{
+                    list-style-type: none;
+                    li{
+                        line-height: 150%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
