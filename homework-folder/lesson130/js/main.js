@@ -18,4 +18,24 @@
 
     }
 
+    let modal = document.querySelector('.modal');
+    let modalButton = document.querySelector('.about__img-button');
+
+    modalButton.addEventListener('click', openModal);
+    modal.addEventListener('click', closeModal);
+
+    function openModal(e){
+        e.preventDefault();
+        document.body.classList.toggle('body--opened-modal')
+    }
+
+    function closeModal(e){
+        e.preventDefault();
+
+        let target = e.target;
+
+        if (target.closest('.modal__cancel') || target.classList.contains('modal')){
+            document.body.classList.remove('body--opened-modal')
+        }
+    }
 })()
