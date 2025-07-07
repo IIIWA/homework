@@ -142,6 +142,7 @@
     padding: 3px;
     position: relative;
     margin-right: 72px;
+    z-index: 2;
 
 
 }
